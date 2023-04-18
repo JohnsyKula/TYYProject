@@ -6,10 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.mysql.cj.jdbc.Driver;
-
 public class DatabaseUtility {
 	Connection con=null;
-	public void connectToDB() throws Throwable
+	public void connectToDB() throws SQLException
 	{
 		Driver driver=new Driver();
 		DriverManager.registerDriver(driver);
@@ -46,6 +45,4 @@ public class DatabaseUtility {
 		con.close();
 		System.out.println("Database connection closed");
 	}
-	
-
 }

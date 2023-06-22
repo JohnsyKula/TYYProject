@@ -96,7 +96,7 @@ public class ExcelUtility {
 	{
 		FileInputStream  fis=new FileInputStream(IPathConstants.excelPath);
 		Workbook wb = WorkbookFactory.create(fis);
-		Sheet sh = wb.getSheet("DP");
+		Sheet sh = wb.getSheet(sheetname);
 		int lastrow=sh.getLastRowNum()+1;
 		int lastcolumn=sh.getRow(0).getLastCellNum();
 		

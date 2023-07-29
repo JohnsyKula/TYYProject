@@ -92,6 +92,4 @@ public class Baseclass {
 	{
 		dlib.closeDB();
 	}
-	
-
 }

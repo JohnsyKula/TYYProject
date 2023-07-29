@@ -16,11 +16,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import com.beust.jcommander.Parameter;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AmazonIhone13 {
 	@Test
-	public static void writeData() throws EncryptedDocumentException, IOException, InterruptedException
+	public static void writeData(String browser) throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
@@ -33,7 +35,7 @@ public class AmazonIhone13 {
 		Thread.sleep(3000);
 		FileInputStream fis=new FileInputStream("./src/test/resources/Edu.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
-		Sheet sheet = wb.createSheet("Price1");
+		Sheet sheet = wb.createSheet("Price3");
 		String price;
 		for(int i=0;i<plist.size();i++)
 		{

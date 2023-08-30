@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practise.YouTube">
+      <class name="practise.AmazonIhone13">
         <methods>
-          <include name="openYouTube"/>
+          <include name="writeData"/>
         </methods>
-      </class> <!-- practise.YouTube -->
+      </class> <!-- practise.AmazonIhone13 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

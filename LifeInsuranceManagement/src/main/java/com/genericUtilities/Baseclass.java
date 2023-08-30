@@ -38,6 +38,7 @@ public class Baseclass {
 	}
 	//@Parameters("BROWSER")
 	@BeforeClass(alwaysRun = true)
+	//public void configBC(String BROWSER)
 	public void configBC() throws Throwable
 	{
 		String BROWSER=flib.readDataFromPropertyFile("browser");
